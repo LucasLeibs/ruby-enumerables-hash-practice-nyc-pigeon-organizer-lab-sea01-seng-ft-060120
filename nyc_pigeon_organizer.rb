@@ -11,7 +11,7 @@ data.each do |attributes, attributes_value|
       if pigeon_list[name][attributes] == nil 
         pigeon_list[name][attributes] = []
       end
-      pigeon_list[name][attributes]
+      pigeon_list[name][attributes]push
  def 
  
 
