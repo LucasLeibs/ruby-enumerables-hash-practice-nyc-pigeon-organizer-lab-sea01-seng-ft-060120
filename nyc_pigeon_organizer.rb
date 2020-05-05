@@ -1,20 +1,11 @@
 
-def nyc_pigeon_organizer(data)
-  pigeon_list = {}
+def nyc_pigeon_organizer(stats)
+pigeon_list = {}
 
-  data.each do |color_gender_lives, attributes|
-    attributes.each do |stats, names|
-      names.each do |name|
-        pigeon_list[name] ||= {}
-        pigeon_list[name][color_gender_lives] ||= []
-        pigeon_list[name][color_gender_lives].push(stats.to_s)
-      end
-    end 
-  end
-
-  pigeon_list
-end
- 
- 
+data.each do |attributes, attributes_value|
+  attributes_value.each do |description, names|
+    names.each do |name|
+      pigeon_list[name]
+ def 
  
 
