@@ -12,6 +12,8 @@ data.each do |attributes, attributes_value|
         pigeon_list[name][attributes] = []
       end
       pigeon_list[name][attributes]push(description.to_s)
+    end
+  end
  def 
  
 
