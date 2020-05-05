@@ -3,9 +3,15 @@ def nyc_pigeon_organizer(stats)
 pigeon_list = {}
 
 data.each do |attributes, attributes_value|
-  attributes_value.each do |description, names|
-    names.each do |name|
-      pigeon_list[name]
+  attributes_value.each do |description, name|
+    name.each do |name|
+      if pigeon_list[name] == nil 
+        pigeon_list[name] = {}
+      end
+      if pigeon_list[name][attributes] == nil 
+        pigeon_list[name][attributes] = []
+      end
+      pigeon_list[name][attributes]
  def 
  
 
